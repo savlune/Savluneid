@@ -55,7 +55,7 @@
       z-index: 1;
     }
 
-    /* ── HERO ── */
+    /* HERO */
     .hero { padding: 60px 0 48px; text-align: center; }
 
     .brand-eyebrow {
@@ -135,7 +135,7 @@
     }
     .value-pill::before { content: '✦'; font-size: 7px; color: var(--gold); }
 
-    /* ── STATS ── */
+    /* STATS */
     .stats-section { padding: 48px 0; }
     .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
     .stat-card {
@@ -165,7 +165,7 @@
       color: var(--muted); letter-spacing: 0.04em; line-height: 1.4;
     }
 
-    /* ── DIVIDER ── */
+    /* DIVIDER */
     .section-divider {
       display: flex; align-items: center; gap: 14px;
       margin: 8px 0 40px;
@@ -179,9 +179,7 @@
       text-transform: uppercase; white-space: nowrap;
     }
 
-    /* ══════════════════════════════════════
-       SERVICE CARDS — REDESIGNED PREMIUM
-    ══════════════════════════════════════ */
+    /* SERVICE CARDS */
     .services-section { padding-bottom: 52px; }
 
     .services-title {
@@ -196,7 +194,6 @@
       text-align: center; margin-bottom: 32px; font-weight: 300;
     }
 
-    /* JUAL / BELI group label */
     .group-block { margin-bottom: 28px; }
 
     .group-header {
@@ -209,9 +206,7 @@
       padding: 5px 14px; border-radius: 50px;
       white-space: nowrap;
     }
-    .group-tag.sell {
-      background: var(--gold); color: #0A0E1A;
-    }
+    .group-tag.sell { background: var(--gold); color: #0A0E1A; }
     .group-tag.buy {
       background: transparent;
       color: var(--gold);
@@ -222,14 +217,12 @@
       background: linear-gradient(90deg, var(--border), transparent);
     }
 
-    /* 3-col for "Jual" (3 items), 3-col for "Beli" (3 items) */
     .services-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 9px;
     }
 
-    /* THE CARD */
     .service-btn {
       display: flex;
       flex-direction: column;
@@ -244,7 +237,6 @@
       min-height: 148px;
     }
 
-    /* Top shimmer line */
     .service-btn::before {
       content: '';
       position: absolute;
@@ -256,7 +248,6 @@
     }
     .service-btn:hover::before { opacity: 1; }
 
-    /* Glow fill */
     .service-btn::after {
       content: '';
       position: absolute; inset: 0;
@@ -272,7 +263,6 @@
     .service-btn:hover::after { opacity: 1; }
     .service-btn:active { transform: translateY(-1px); }
 
-    /* Icon zone */
     .card-icon-zone {
       display: flex;
       align-items: center;
@@ -293,11 +283,8 @@
       border-color: rgba(201,169,110,0.4);
       transform: scale(1.08) translateY(-1px);
     }
-    .card-svg-wrap svg {
-      width: 20px; height: 20px;
-    }
+    .card-svg-wrap svg { width: 20px; height: 20px; }
 
-    /* Text content */
     .card-body {
       padding: 0 13px 14px;
       flex: 1; display: flex; flex-direction: column;
@@ -319,7 +306,6 @@
       font-weight: 300; line-height: 1.4; flex: 1;
     }
 
-    /* Arrow circle */
     .card-arrow-chip {
       position: absolute;
       right: 10px; bottom: 10px;
@@ -341,7 +327,7 @@
     }
     .service-btn:hover .card-arrow-chip svg { stroke: var(--gold); }
 
-    /* ── WHY SAVLUNE ── */
+    /* WHY SAVLUNE */
     .why-section {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -371,7 +357,7 @@
       line-height: 1.75; font-weight: 300;
     }
 
-    /* ── CTA ── */
+    /* CTA */
     .cta-section { text-align: center; padding-bottom: 60px; }
     .cta-label {
       font-size: 11px; font-weight: 400;
@@ -395,7 +381,7 @@
     .cta-main-btn:active { transform: translateY(0); }
     .wa-icon { font-size: 18px; }
 
-    /* ── FOOTER ── */
+    /* FOOTER */
     footer { border-top: 1px solid var(--border); padding: 28px 0; text-align: center; }
     .footer-brand {
       font-family: 'Cormorant Garant', serif;
@@ -404,7 +390,7 @@
     }
     .footer-copy { font-size: 11px; color: var(--muted); font-weight: 300; }
 
-    /* ── ANIMATIONS ── */
+    /* ANIMATIONS */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(20px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -474,7 +460,7 @@
     </div>
   </section>
 
-  <!-- SERVICES — REDESIGNED -->
+  <!-- SERVICES -->
   <section class="services-section reveal">
     <div class="container">
       <div class="section-divider">
@@ -540,7 +526,7 @@
             </div>
           </a>
 
-          <!-- Jual Mobil Second -->
+          <!-- Jual Mobil -->
           <a class="service-btn"
              href="https://wa.me/6282156067048?text=Halo%20Savlune%2C%20saya%20ingin%20menjual%20mobil%20second."
              target="_blank" rel="noopener">
@@ -591,4 +577,66 @@
               </div>
             </div>
             <div class="card-body">
-              <span class="card-di 
+              <span class="card-badge">Beli</span>
+              <span class="card-title">Rumah</span>
+              <span class="card-tagline">Kami bantu temukan rumah impian sesuai budget</span>
+            </div>
+            <div class="card-arrow-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY SAVLUNE -->
+  <section class="reveal">
+    <div class="container">
+      <div class="why-section">
+        <p class="why-eyebrow">Kenapa Memilih Kami</p>
+        <h2 class="why-title">Kenapa Pilih SAVLUNE?</h2>
+        <p class="why-body">
+          SAVLUNE membantu mempertemukan penjual dan pembeli dengan cara yang lebih cepat, rapi, dan profesional. Cocok untuk Anda yang ingin menjual aset atau mencari properti, tanah, dan kendaraan — dengan proses yang lebih mudah dan terpercaya.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section reveal">
+    <div class="container">
+      <p class="cta-label">Mulai sekarang, gratis konsultasi</p>
+      <a class="cta-main-btn"
+         href="https://wa.me/6282156067048?text=Halo%20Savlune%2C%20saya%20ingin%20konsultasi%20jual%20beli."
+         target="_blank" rel="noopener">
+        <span class="wa-icon">💬</span>
+        Konsultasi Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-brand">SAVLUNE</div>
+      <p class="footer-copy">Platform Jual &amp; Beli Properti, Tanah, dan Mobil</p>
+    </div>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>
